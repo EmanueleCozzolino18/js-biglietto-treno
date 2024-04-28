@@ -15,3 +15,7 @@ var ticketSales = priceKm * distanceKm;
 if (eta <= 18) {
     document.getElementById('prezzoFinale').innerHTML = result + ((ticketSales / 100) * 80) + euroValute;
 }
+// SECONDA CONDIZIONE PER OVER 65
+else if (eta >= 65) {
+    document.getElementById('prezzoFinale').innerHTML = result + ((ticketSales / 100) * 60) + euroValute;
+}
