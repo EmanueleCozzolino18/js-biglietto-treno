@@ -19,3 +19,7 @@ if (eta <= 18) {
 else if (eta >= 65) {
     document.getElementById('prezzoFinale').innerHTML = result + ((ticketSales / 100) * 60) + euroValute;
 }
+//ALTRIMENTI SE NON RIENTRANO IN QUESTE FASCE SEGUI QUESTO PREZZO
+else {
+    document.getElementById('prezzoFinale').innerHTML = result + (ticketSales) + euroValute;
+}
